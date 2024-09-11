@@ -7,6 +7,7 @@ import axios from 'axios';
 import RandomPhoto from './RandomPhoto';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { Heading } from '@chakra-ui/react'
+import UploadFeature from './uploadFeature'; // Update the import here
 import "./RandomPhoto.css";
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
  return (
    <>
      <div>
-     <Heading style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>Art Institute of Chicago Gallery</Heading>
+       <Heading style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>Art Institute of Chicago Gallery</Heading>
+       <UploadFeature />
        <RandomPhoto />
      </div>
 
