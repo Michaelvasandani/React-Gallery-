@@ -45,7 +45,7 @@ const UploadFeature = () => {
 
   return (
     <div className="uploadImage">
-      <div className="buttonContainer"> {/* Center the buttons */}
+      <div className="buttonContainer"> 
         <input
           type="file"
           onChange={(event) => {
@@ -55,7 +55,7 @@ const UploadFeature = () => {
         <button className="uploadButton" onClick={uploadFile}>Upload Image</button>
       </div>
       
-      {/* Display images with flexbox and wrapping */}
+     
       <div className="imageGrid">
         {imageUrls.map((image, index) => (
           <div key={index} className="imageItem">

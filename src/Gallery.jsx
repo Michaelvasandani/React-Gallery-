@@ -11,34 +11,20 @@ import { Heading } from '@chakra-ui/react'
 import UploadFeature from './uploadFeature'; // Update the import here
 import NavBar from './NavBar';
 import "./RandomPhoto.css";
-import Home from './Home';
-import Gallery from './Gallery';
-import Contact from './Contact';
-function App() {
 
 
 
-
-
-
- return (
-   <>
-     <div>
-       <BrowserRouter>
-         <Routes>
-           <Route index element={<Home />} />
-           <Route path="/home" element={<Home />} />
-           <Route path="/gallery" element={<Gallery />} />
-           <Route path ="/contact" element={<Contact />} />
-         </Routes>
-       </BrowserRouter>
-  
-     </div>
-
-
-   </>
- )
+const Gallery = () => {
+  return (
+    <div>
+    <nav id="desktop-nav">
+       <NavBar />
+     </nav>
+      <Heading style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>Art Institute of Chicago Gallery</Heading>
+      <UploadFeature />
+      <RandomPhoto />
+    </div>
+  )
 }
 
-
-export default App
+export default Gallery
