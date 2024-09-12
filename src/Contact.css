@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* Add padding to your content to avoid overlapping with navbar */
 .contact {
     padding-top: 80px; /* Add padding to account for the height of the fixed navbar */
